@@ -1,0 +1,90 @@
+.aText {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-anchor: middle;
+}
+
+.active {
+  font-weight: bold;
+  fill: #000;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive {
+  font-weight: lighter;
+  fill: #c9c9c9;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive:hover {
+  fill: #000;
+  cursor: pointer;
+}
+
+/* font size dependent on radius, see app.js */
+
+.stateText {
+  font-family: sans-serif !important;
+  color: white !important;
+  align-content: center;
+}
+
+.text {
+  font-family: sans-serif !important;
+}
+
+.stateCircle {
+  fill: none;
+}
+
+.chart {
+  position: relative;
+  display: block;
+  width: 800px;
+  margin-top: 50px;
+  height: 500px;
+  content: " ";
+}
+
+.axisText {
+  font-weight: bold;
+  text-anchor: middle;
+  font-family: sans-serif;
+
+}
+
+.tooltip.n {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    padding: 2px;
+    padding-top: 8px;
+    font: 13px sans-serif;
+    color: white;
+    text-align: center;
+    font-style: bolder !important;
+    background: royalBlue !important;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+
+/* Mobile Rules */
+@media screen and (max-width: 530px) {
+  .stateText {
+    display: none;
+  }
+
+  .aText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .aText {
+    font-size: 13px;
+  }
+}
